@@ -186,3 +186,7 @@ idea {
         downloadJavadoc = true
     }
 }
+// Make prepareServerDataRun point to the new data task
+tasks.register("prepareServerDataRun") {
+    dependsOn tasks.named("prepareDataRun")
+}
