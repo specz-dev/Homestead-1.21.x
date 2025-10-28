@@ -1,4 +1,4 @@
-package net.speculationz.homestead;
+package net.specz.homestead;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package net.speculationz.homestead;
+package net.specz.homestead;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
