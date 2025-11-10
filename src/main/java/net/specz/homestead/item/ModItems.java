@@ -9,7 +9,20 @@ import net.specz.homestead.Homestead;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Homestead.MODID);
 
+    public static final DeferredItem<Item> LUCERNE = ITEMS.register("lucerne",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LUCERNE_SEEDS = ITEMS.register("lucerne_seeds",
+            () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CLOVER = ITEMS.register("clover",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CLOVER_SEEDS = ITEMS.register("clover_seeds",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> PASTURE_HAY = ITEMS.register("pasture_hay",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PASTURE_HAY_SEEDS = ITEMS.register("pasture_hay_seeds",
+            () -> new Item(new Item.Properties()));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);

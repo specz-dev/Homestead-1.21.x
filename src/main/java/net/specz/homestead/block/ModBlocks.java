@@ -1,5 +1,8 @@
 package net.specz.homestead.block;
 
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.specz.homestead.Homestead;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -14,6 +17,10 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Homestead.MODID);
+
+    public static final DeferredBlock<Block> LUCERNE_BALE = registerBlock("lucerne_bale",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(0.5F).sound(SoundType.GRASS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

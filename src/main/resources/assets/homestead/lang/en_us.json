@@ -1,0 +1,14 @@
+{
+  "item.homestead.lucerne": "Lucerne",
+  "item.homestead.clover": "Clover",
+  "item.homestead.pasture_hay": "Pasture Hay",
+
+  "item.homestead.clover_seeds": "Clover Seeds",
+  "item.homestead.lucerne_seeds": "Lucerne Seeds",
+  "item.homestead.pasture_hay_seeds": "Pasture Hay Seeds",
+
+  "block.homestead.lucerne_bale": "Lucerne Bale",
+
+  "creativetab.homestead.homestead": "Homestead"
+
+}

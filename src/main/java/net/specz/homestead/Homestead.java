@@ -1,6 +1,8 @@
 package net.specz.homestead;
 
+import net.minecraft.world.item.CreativeModeTabs;
 import net.specz.homestead.block.ModBlocks;
+import net.specz.homestead.item.ModCreativeModeTabs;
 import net.specz.homestead.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +39,8 @@ public class Homestead {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
