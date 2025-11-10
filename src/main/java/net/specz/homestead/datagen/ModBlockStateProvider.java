@@ -14,10 +14,25 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.LUCERNE_BALE);
+        registerBale(ModBlocks.LUCERNE_BALE, "lucerne_bale_side", "lucerne_bale_top");
+        registerBale(ModBlocks.CLOVER_BALE, "clover_bale_side", "clover_bale_top");
+        registerBale(ModBlocks.PASTURE_HAY_BALE, "pasture_hay_bale_side", "pasture_hay_bale_top");
+    }
+
+    private void registerBale(DeferredBlock<?> block, String sideTexture, String topTexture) {
+        simpleBlockWithItem(
+                block.get(),
+                models().withExistingParent(block.getId().getPath(), mcLoc("cube_column"))
+                        .texture("end", modLoc("block/" + topTexture))
+                        .texture("side", modLoc("block/" + sideTexture))
+        );
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
-        simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
+        simpleBlockWithItem(deferredBlock.get(),
+                cubeAll(deferredBlock.get())
+        );
     }
 }
+
+

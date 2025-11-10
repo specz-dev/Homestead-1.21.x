@@ -20,6 +20,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE);
         tag(BlockTags.MINEABLE_WITH_HOE)
-                .add(ModBlocks.LUCERNE_BALE.get());
+                .add(ModBlocks.LUCERNE_BALE.get())
+                .add(ModBlocks.CLOVER_BALE.get())
+                .add(ModBlocks.PASTURE_HAY_BALE.get());
     }
 }

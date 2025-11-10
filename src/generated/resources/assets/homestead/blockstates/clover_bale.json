@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "homestead:block/clover_bale", "x": 90, "y": 90 },
+    "axis=y": { "model": "homestead:block/clover_bale" },
+    "axis=z": { "model": "homestead:block/clover_bale", "x": 90 }
+  }
+}

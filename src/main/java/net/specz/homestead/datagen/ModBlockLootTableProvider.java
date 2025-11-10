@@ -17,6 +17,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
     dropSelf(ModBlocks.LUCERNE_BALE.get());
+    dropSelf(ModBlocks.CLOVER_BALE.get());
+    dropSelf(ModBlocks.PASTURE_HAY_BALE.get());
     }
 
     @Override

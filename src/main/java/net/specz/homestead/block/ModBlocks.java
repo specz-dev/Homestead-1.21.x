@@ -22,6 +22,14 @@ public class ModBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F).sound(SoundType.GRASS)));
 
+    public static final DeferredBlock<Block> CLOVER_BALE = registerBlock("clover_bale",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(0.5F).sound(SoundType.GRASS)));
+
+    public static final DeferredBlock<Block> PASTURE_HAY_BALE = registerBlock("pasture_hay_bale",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+                    .strength(0.5F).sound(SoundType.GRASS)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

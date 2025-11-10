@@ -29,6 +29,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PASTURE_HAY.get());
 
                         output.accept(ModBlocks.LUCERNE_BALE.get().asItem());
+                        output.accept(ModBlocks.CLOVER_BALE.get().asItem());
+                        output.accept(ModBlocks.PASTURE_HAY_BALE.asItem());
                     })
                     .build());
 

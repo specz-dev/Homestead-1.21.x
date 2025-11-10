@@ -1,5 +1,7 @@
 {
   "values": [
-    "homestead:lucerne_bale"
+    "homestead:lucerne_bale",
+    "homestead:clover_bale",
+    "homestead:pasture_hay_bale"
   ]
 }
