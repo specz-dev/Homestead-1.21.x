@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "homestead:block/lucerne_bale", "x": 90, "y": 90 },
+    "axis=y": { "model": "homestead:block/lucerne_bale" },
+    "axis=z": { "model": "homestead:block/lucerne_bale", "x": 90 }
+  }
+}
