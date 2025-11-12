@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lucerne_bale": {
+      "conditions": {
+        "items": [
+          {
+            "items": "homestead:lucerne_bale"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "homestead:lucerne_from_lucerne_bale"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lucerne_bale"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "homestead:lucerne_from_lucerne_bale"
+    ]
+  }
+}

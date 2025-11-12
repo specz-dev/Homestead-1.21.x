@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    },
+    {
+      "item": "homestead:pasture_hay"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "homestead:pasture_hay_bale"
+  }
+}
